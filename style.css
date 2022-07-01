@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
     overflow-x: hidden;
-    color:white;
     font-family: 'Electrolize', sans-serif;
 }
 body {
@@ -24,6 +23,17 @@ body {
 }
 .menu-top{
     text-align: center;
+    color: rgb(255, 255, 255);
+    border: 1px solid yellow;
+    height:20vh;
+    background: black;
+}
+h4{
+    font-weight:100;
+    font-size: 25px;
+}
+.span{
+    color: rgb(235, 224, 224);
 }
 
 .menu-center{
@@ -31,32 +41,47 @@ body {
     display:flex;
     flex-direction: column;
     text-align: center;
+    overflow-y: hidden;
+    padding: 5px;
     
-}
-.menu-bottom{
-    text-align: center;
 }
 
-a{
-    
+.menu-bottom{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-bottom:40px;
+    overflow: hidden;
+    border:1px solid blue;
+    padding:20px;
+}
+
+.a-menu{
     border-top: 1px solid #282828;
-    border-bottom: 1px solid #282828;
     padding: 20px;
+    cursor: pointer;
+    color: rgb(235, 224, 224);
+}
+a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
 }
 /*---------------fIN----------*/
 .page{
    display: flex;
    flex-direction: column;
-   margin-left: 13rem;
-   margin-top: -16px;
+   margin-left: 12rem;
 }
 
-/*--------------HOME----------*/
 .seccion{
     height: 100vh;
     width: 100%;
     border: 1px solid red;
+    overflow-y: hidden;
 }
+/*--------------HOME----------*/
+
 .seccion.home{
     height: 30vh;
     width: 100%;
@@ -78,12 +103,116 @@ h1{
     margin-top: 10px;
     margin-left: 40px;
 }
+.span2{
+    margin-left:2.5%;
+    letter-spacing: 5px;
+    word-spacing:5px;
+    color: white;
+}
+h2{
+    position: relative;
+    color: white;
+    z-index: 1;
+    font-weight: 50;
+    font-size:60px;
+    margin: 0 auto;
+    width: 100%;
+    
+    word-spacing: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+/*--------------SKILLS----------*/
+.tecnologys{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    width:80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.svg{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+
+/*--------------FIN----------*/
+/*--------------WORKS----------*/
+.seccion.works{
+    display: flex;
+    flex-direction: column;
+    
+}
+.work{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border:1px solid yellow;
+    padding: 0%;
+    overflow: hidden;
+}
+a{
+    overflow: hidden;
+}
+.work-img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*--------------FIN----------*/
+/*--------------CONTACT----------*/
+.Contanct1{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid yellow;
+    height: 70%;
+}
+.Contanct1 form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 40vh;
+    margin-top: 180px;
+}
+input,textarea,button{
+    background: #2b2b2b;
+    color: #606060;
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #08fdd8 ;
+}
+textarea{
+    height: 40%;
+}
+button{
+    width: 30%;
+    background:#1d1d1d;
+    border: 1px solid #08fdd8;
+    color:#08fdd8;
+    cursor: pointer;
+    margin-left: 54%;
+}
+
+button:hover{
+    background:#08fdd8;
+    color: #1d1d1d;
+    transition:1s;
+}
 
 
 
 
 
-
-
-
-
+@media (max-width: 1280px){
+    .span2{
+        margin-left:5%;
+    }
+}
