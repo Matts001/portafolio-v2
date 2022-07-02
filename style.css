@@ -22,28 +22,45 @@ body {
     
 }
 .menu-top{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     color: rgb(255, 255, 255);
-    border: 1px solid yellow;
-    height:20vh;
+    height:25vh;
     background: black;
+    overflow:hidden;
 }
+.perfil{
+    margin: 0 auto;
+    margin-top:10px;
+    animation: flota 3s linear infinite
+}
+
+@keyframes flota{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+}
+
 h4{
+    margin-top: 10px;
     font-weight:100;
     font-size: 25px;
 }
 .span{
-    color: rgb(235, 224, 224);
+    margin-top: -30px;
 }
 
 .menu-center{
-    
     display:flex;
     flex-direction: column;
     text-align: center;
     overflow-y: hidden;
     padding: 5px;
-    
+    margin-bottom: 40px;
 }
 
 .menu-bottom{
@@ -53,7 +70,6 @@ h4{
     flex-direction: column;
     margin-bottom:40px;
     overflow: hidden;
-    border:1px solid blue;
     padding:20px;
 }
 
@@ -107,7 +123,7 @@ h1{
     margin-left:2.5%;
     letter-spacing: 5px;
     word-spacing:5px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 h2{
     position: relative;
@@ -153,8 +169,9 @@ h2{
     flex-direction: row;
     justify-content: start;
     border:1px solid yellow;
-    padding: 0%;
+    padding: 10%;
     overflow: hidden;
+    
 }
 a{
     overflow: hidden;
@@ -206,7 +223,12 @@ button:hover{
     color: #1d1d1d;
     transition:1s;
 }
-
+h3{
+    color: white;
+    margin: 0 auto;
+    margin-bottom:20px;
+    font-size:40px;
+}
 
 
 
@@ -214,5 +236,11 @@ button:hover{
 @media (max-width: 1280px){
     .span2{
         margin-left:5%;
+    }
+    .work{
+        padding: 2%;
+    }
+    .work-img{
+        width: 16vw;
     }
 }
