@@ -176,6 +176,7 @@ h2{
     
 }
 a{
+    text-decoration: none;
     overflow: hidden;
 }
 .work-img{
