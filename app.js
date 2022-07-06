@@ -24,7 +24,7 @@ let letterIndex = 0;
 
 const typingDelay = 200;
 const erasingDelay = 100;
-const newWordDelay = 1000;
+const newWordDelay = 2000;
 
 // Typing Function
 function type() {
