@@ -148,13 +148,14 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     border: 1px solid blue;
-    width:60%;
+    width:95%;
     margin: 0 auto;
     padding: 10px;
 }
 .svg{
-    margin: 0 auto;
-    padding: 20px;
+    margin: 5% 5%;
+    margin-left:110px;
+    padding: 10px;
 }
 
 
